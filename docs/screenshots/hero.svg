@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <rect fill="#0f0f14" width="360" height="640"/>
+  <text x="180" y="280" text-anchor="middle" fill="#a78bfa" font-size="42" font-family="system-ui,sans-serif">Biolog</text>
+  <text x="180" y="330" text-anchor="middle" fill="#9ca3af" font-size="14" font-family="system-ui,sans-serif">;ø"¢"</text>
+  <rect x="60" y="380" width="240" height="44" rx="8" fill="#7c3aed"/>
+  <text x="180" y="407" text-anchor="middle" fill="#fff" font-size="14" font-family="system-ui,sans-serif">AI ûê</text>
+  <rect x="60" y="436" width="240" height="44" rx="8" fill="#1f1f28" stroke="#3f3f50"/>
+  <text x="180" y="463" text-anchor="middle" fill="#d1d5db" font-size="14" font-family="system-ui,sans-serif">:Så</text>
+</svg>

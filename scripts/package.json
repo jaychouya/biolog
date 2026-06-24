@@ -1,0 +1,10 @@
+{
+  "name": "biolog-scripts",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "gifenc": "^1.0.3",
+    "playwright": "^1.52.0",
+    "pngjs": "^7.0.0"
+  }
+}

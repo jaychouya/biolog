@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect fill="#0f0f14" width="1200" height="630"/>
+  <text x="600" y="260" text-anchor="middle" fill="#a78bfa" font-size="72" font-family="system-ui,sans-serif" font-weight="600">Biolog</text>
+  <text x="600" y="330" text-anchor="middle" fill="#9ca3af" font-size="28" font-family="system-ui,sans-serif">! AI ¨þïÆ</text>
+  <text x="600" y="400" text-anchor="middle" fill="#34d399" font-size="22" font-family="system-ui,sans-serif">A¨ · Í‹žùÔ · gGè</text>
+  <rect x="350" y="450" width="220" height="12" rx="6" fill="#1f1f28"/>
+  <rect x="350" y="450" width="143" height="12" rx="6" fill="#f97316"/>
+  <text x="470" y="495" text-anchor="middle" fill="#6b7280" font-size="16" font-family="system-ui,sans-serif">63%</text>
+  <rect x="630" y="450" width="220" height="12" rx="6" fill="#1f1f28" stroke="#34d399"/>
+  <rect x="630" y="450" width="185" height="12" rx="6" fill="#34d399"/>
+  <text x="740" y="495" text-anchor="middle" fill="#34d399" font-size="16" font-family="system-ui,sans-serif">84%</text>
+</svg>

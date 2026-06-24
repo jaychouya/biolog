@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <rect fill="#0f0f14" width="360" height="640"/>
+  <text x="180" y="80" text-anchor="middle" fill="#f3f4f6" font-size="14" font-family="system-ui,sans-serif">Í‹žùÔ</text>
+  <rect x="30" y="110" width="130" height="120" rx="8" fill="#1f1f28"/>
+  <text x="95" y="150" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="system-ui,sans-serif">àþ</text>
+  <text x="95" y="190" text-anchor="middle" fill="#f97316" font-size="28" font-family="system-ui,sans-serif">65%</text>
+  <rect x="200" y="110" width="130" height="120" rx="8" fill="#1f1f28" stroke="#34d399"/>
+  <text x="265" y="150" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="system-ui,sans-serif">	þ</text>
+  <text x="265" y="190" text-anchor="middle" fill="#34d399" font-size="28" font-family="system-ui,sans-serif">87%</text>
+  <text x="180" y="280" text-anchor="middle" fill="#7c3aed" font-size="13" font-family="system-ui,sans-serif">+22% !žÊ</text>
+</svg>

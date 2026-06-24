@@ -1,0 +1,7 @@
+{
+  "name": "biolog",
+  "private": true,
+  "scripts": {
+    "capture": "node scripts/capture-demo.mjs --start-servers"
+  }
+}
