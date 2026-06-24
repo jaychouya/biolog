@@ -25,16 +25,18 @@ export default function ScenarioPicker({ scenarios, onSelect, onCustom, onConfig
               type="button"
               onClick={() => onSelect(s.id)}
               disabled={loading}
-              className="flex w-full cursor-pointer items-center gap-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-left transition hover:border-[var(--color-primary)] hover:bg-[var(--color-surface-elevated)] disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex w-full cursor-pointer items-start gap-3 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-left transition hover:border-[var(--color-primary)] hover:bg-[var(--color-surface-elevated)] disabled:cursor-not-allowed disabled:opacity-50"
             >
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-primary)]/15 text-[var(--color-primary)]">
-                <ScenarioIcon id={s.id} className="w-6 h-6" />
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--color-primary)]/15 text-[var(--color-primary)]">
+                <ScenarioIcon id={s.id} className="h-5 w-5" />
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block font-medium text-[var(--color-text)]">{s.title}</span>
-                <span className="mt-0.5 block truncate text-sm text-[var(--color-text-muted)]">「{s.symptom}」</span>
+                <span className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                  <span className="text-title font-medium text-[var(--color-text)]">{s.title}</span>
+                  <span className="text-caption text-[var(--color-text-subtle)]">{s.subtitle}</span>
+                </span>
+                <span className="mt-1.5 block truncate text-caption text-[var(--color-text-muted)]">「{s.symptom}」</span>
               </span>
-              <span className="shrink-0 text-xs text-[var(--color-text-subtle)]">{s.subtitle}</span>
             </button>
           </li>
         ))}

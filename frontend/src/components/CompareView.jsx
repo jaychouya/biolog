@@ -14,7 +14,7 @@ function MiniResult({ result, label, badge, animate, delay, showImage }) {
   return (
     <article className="card p-5">
       <div className="mb-4 flex items-center justify-between gap-2">
-        <span className="text-sm font-medium text-[var(--color-text-muted)]">{label}</span>
+        <span className="text-caption font-medium text-[var(--color-text-muted)]">{label}</span>
         <span className={`badge text-xs ${badge.className}`}>{badge.text}</span>
       </div>
       {showImage && result.image && (
@@ -29,7 +29,7 @@ function MiniResult({ result, label, badge, animate, delay, showImage }) {
         </div>
       )}
       <p className="section-label mb-1">主因推测</p>
-      <p className="mb-4 text-base font-semibold">{result.primary_cause}</p>
+      <p className="mb-4 text-title font-semibold leading-snug">{result.primary_cause}</p>
       <p className="section-label mb-2">置信度</p>
       <div className="mb-4">
         <ConfidenceBar score={result.confidence_score} animate={animate} delay={delay} />
@@ -132,8 +132,8 @@ export default function CompareView({ onBack }) {
               {aiLoading ? 'AI 分析中...' : '用 AI 重跑对比'}
             </button>
           )}
-          {progress && <span className="text-xs text-[var(--color-text-muted)]">{progress}</span>}
-          {error && <span className="text-xs text-orange-400" role="alert">{error}</span>}
+          {progress && <span className="text-caption text-[var(--color-text-muted)]">{progress}</span>}
+          {error && <span className="text-caption text-orange-400" role="alert">{error}</span>}
         </div>
 
         {loading || aiLoading ? (
@@ -159,7 +159,7 @@ export default function CompareView({ onBack }) {
         )}
 
         {!loading && !aiLoading && (
-          <p className="card mt-8 p-4 text-center text-sm text-[var(--color-primary)]">
+          <p className="card mt-8 p-4 text-center text-caption text-[var(--color-primary)]">
             {source === 'ai'
               ? '以上为你的 Key 实时分析结果'
               : '默认展示实录样本；自备 Key 可一键重跑验证'}

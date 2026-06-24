@@ -5,15 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biolog — 多模态 AI 推理链可视化</title>
-    <meta name="description" content="演示多模态如何改变推理结构与置信度。流式推理、反事实对比、照片标注。" />
+    <meta name="description" content="Biolog：开源多模态 AI 推理链可视化 Demo。同症状加餐食照片，置信度从 63% 升至 84%。React + FastAPI，SSE 流式推理、反事实对比、照片标注。" />
+    <meta name="keywords" content="Biolog,多模态AI,推理链可视化,反事实对比,SSE流式,React,FastAPI,OpenAI,Kimi,开源Demo" />
+    <link rel="canonical" href="https://github.com/jaychouya/biolog" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Biolog — 多模态 AI 推理链可视化" />
-    <meta property="og:description" content="同一段症状，加一张照片，置信度跃升。开源 Demo，支持用户自备 Key。" />
+    <meta property="og:description" content="同一段症状，加一张照片，置信度从 63% 升至 84%。开源 Demo，SSE 真流式，支持自备 API Key。" />
     <meta property="og:image" content="/og-image.png" />
+    <meta property="og:site_name" content="Biolog" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Biolog" />
-    <meta name="twitter:description" content="多模态 AI 推理链可视化 Demo" />
+    <meta name="twitter:title" content="Biolog — Multimodal AI Reasoning Visualization" />
+    <meta name="twitter:description" content="Open-source demo: how a meal photo changes AI inference and confidence." />
     <meta name="twitter:image" content="/og-image.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Biolog",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "description": "开源多模态 AI 推理链可视化 Demo，展示餐食照片如何改变大模型推理结构与置信度",
+      "url": "https://github.com/jaychouya/biolog",
+      "author": { "@type": "Person", "name": "jaychouya" },
+      "programmingLanguage": ["TypeScript", "Python"],
+      "featureList": ["SSE streaming", "counterfactual comparison", "photo annotation", "multi-provider LLM"]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

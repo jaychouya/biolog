@@ -16,11 +16,11 @@ export default function EvidenceChain({ items, animate = false, delayStart = 0 }
   }, [items, animate, delayStart])
 
   return (
-    <ul className="space-y-2">
+    <ul className="space-y-2.5">
       {items.map((item, i) => (
         <li
           key={i}
-          className={`flex items-start gap-2 text-sm text-[var(--color-text-muted)] transition-[opacity,transform] duration-300 ${
+          className={`flex items-start gap-2 text-caption text-[var(--color-text-muted)] transition-[opacity,transform] duration-300 ${
             i < visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
           }`}
         >

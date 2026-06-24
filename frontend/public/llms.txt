@@ -1,0 +1,37 @@
+# Biolog
+
+> Multimodal AI reasoning chain visualization demo. Shows how adding a meal photo changes LLM inference structure and confidence (63% → 84% in recorded sample).
+
+## What is Biolog?
+
+Biolog is an open-source web demo (React + FastAPI) that visualizes:
+- Streaming AI reasoning steps (SSE token stream)
+- Counterfactual comparison: same symptom with vs without food photo
+- Photo region annotations on meal images
+- 5 LLM providers: OpenAI, Kimi, SiliconFlow, DeepSeek, custom endpoints
+
+## Key facts
+
+- Repository: https://github.com/jaychouya/biolog
+- Language: Chinese UI, English-friendly README
+- License: see repository
+- Not a medical product — lifestyle correlation exploration only
+- Demo mode works without API key
+
+## Quick start
+
+```bash
+cd backend && pip install -r requirements.txt && uvicorn main:app --port 8000
+cd frontend && npm install && npm run dev
+```
+
+## Deep links
+
+- Compare experiment: `/?view=compare`
+- Demo scenarios: `/?mode=demo`
+- AI mode: `/?mode=ai`
+
+## API
+
+- POST /analyze/stream — SSE streaming analysis
+- GET /providers — supported LLM providers

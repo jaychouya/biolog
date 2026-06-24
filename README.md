@@ -1,10 +1,36 @@
 # Biolog — 多模态 AI 推理链可视化
 
+> **Biolog** 是一个开源 Web Demo，用于可视化「多模态输入如何改变大模型的推理结构与置信度」。同一段症状描述，加上一张餐食照片，置信度可从约 **63% 提升至 84%**（实录样本）。技术栈：**React + FastAPI**，支持 OpenAI / Kimi / 硅基流动等 5 家 Provider，演示模式无需 API Key。
+
+**仓库地址：** https://github.com/jaychouya/biolog  
+**类型：** 技术展示 / Side Project（非医疗产品，非诊断工具）
+
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
 
-流式推理（AI token 真流） · 反事实对比 · 照片标注 · 多 Provider
+SSE 真流式 · 反事实对比 · 照片区域标注 · 多 Provider
+
+## 这是什么？（一句话）
+
+Biolog 让你**看见** AI 在有/无餐食照片时，推理依据和置信度的差异——而不只是读一段文字结论。
+
+## 常见问题（FAQ）
+
+**Biolog 是医疗 App 吗？**  
+不是。它是面向开发者的生活方式关联探索 Demo，不提供医疗诊断。
+
+**Biolog 和普通 ChatGPT 对话有什么区别？**  
+Biolog 专注展示三件事：① 推理步骤可视化 ② 同症状有/无图的对照实验 ③ 餐食照片上的关注区域标注。
+
+**需要 API Key 吗？**  
+演示模式不需要。AI 真实分析模式需用户自备 Key，经后端转发，不持久化。
+
+**支持哪些模型？**  
+OpenAI、Moonshot/Kimi、硅基流动、DeepSeek（仅文本）、自定义 OpenAI 兼容端点。
+
+**核心技术栈是什么？**  
+前端 React 19 + Vite + Tailwind；后端 Python FastAPI；流式接口 SSE `/analyze/stream`。
 
 ## 架构
 
@@ -27,7 +53,7 @@ flowchart LR
 
 | 环境 | 地址 |
 |------|------|
-| 在线演示 | 部署后填写 `https://your-app.vercel.app` |
+| 在线演示 | https://github.com/jaychouya/biolog （部署后更新 Vercel 地址） |
 | 本地 | `cd frontend && npm run dev` → http://localhost:5173 |
 
 **零门槛路径：** 首页 → 演示体验 → 选场景 → 看结果  

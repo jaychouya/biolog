@@ -7,8 +7,8 @@ export function PageHeader({ onBack, title, subtitle }) {
         <IconBack />
         返回
       </button>
-      {title && <h1 className="text-2xl font-semibold text-[var(--color-text)] md:text-3xl">{title}</h1>}
-      {subtitle && <p className="mt-2 text-sm text-[var(--color-text-muted)]">{subtitle}</p>}
+      {title && <h1 className="text-title text-[var(--color-text)] md:text-2xl">{title}</h1>}
+      {subtitle && <p className="text-caption mt-2 line-clamp-3 text-[var(--color-text-muted)] md:line-clamp-none">{subtitle}</p>}
     </header>
   )
 }
@@ -19,8 +19,8 @@ export function Modal({ title, description, onClose, children }) {
       <div className="modal-panel card">
         <div className="mb-5 flex items-start justify-between gap-4">
           <div>
-            <h2 id="modal-title" className="text-xl font-semibold">{title}</h2>
-            {description && <p className="mt-1 text-sm text-[var(--color-text-muted)]">{description}</p>}
+            <h2 id="modal-title" className="text-title">{title}</h2>
+            {description && <p className="text-caption mt-1.5 text-[var(--color-text-muted)]">{description}</p>}
           </div>
           <button type="button" onClick={onClose} className="btn-icon shrink-0" aria-label="关闭">
             <IconClose />

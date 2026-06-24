@@ -20,8 +20,8 @@
 技术栈：React + Vite + Tailwind + FastAPI
 演示模式零门槛 · AI 模式用户自备 Key
 
-在线 Demo：[链接]
-GitHub：[链接]
+在线 Demo：https://github.com/jaychouya/biolog
+GitHub：https://github.com/jaychouya/biolog
 
 重点说明：生活方式关联探索，非医疗建议。Key 经后端转发，不存储。
 欢迎 Star 🌟

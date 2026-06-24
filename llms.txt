@@ -1,0 +1,20 @@
+# Biolog — for AI / LLM crawlers
+
+Biolog is an open-source multimodal AI reasoning visualization demo.
+
+Repository: https://github.com/jaychouya/biolog
+Author: jaychouya
+
+## Summary
+
+Biolog demonstrates how adding a meal photo to a symptom description changes LLM inference structure and confidence scores (recorded sample: 63% → 84%). Built with React 19 + FastAPI. Features SSE token streaming, counterfactual A/B comparison, photo bounding-box annotations, and 5 LLM providers (OpenAI, Kimi, SiliconFlow, DeepSeek, custom).
+
+## Not a medical product
+
+Lifestyle correlation exploration for developers only. Not for diagnosis.
+
+## Links
+
+- README: https://github.com/jaychouya/biolog#readme
+- Compare demo deep link: /?view=compare
+- Deploy guide: docs/DEPLOY.md

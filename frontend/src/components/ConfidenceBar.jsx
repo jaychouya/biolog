@@ -21,7 +21,7 @@ export default function ConfidenceBar({ score, animate = false, delay = 0 }) {
           style={{ width: `${width}%` }}
         />
       </div>
-      <span className="min-w-[3rem] text-right text-lg font-semibold tabular-nums text-[var(--color-primary)]">{width}%</span>
+      <span className="text-numeric text-title min-w-[3rem] text-right font-semibold text-[var(--color-primary)]">{width}%</span>
     </div>
   )
 }

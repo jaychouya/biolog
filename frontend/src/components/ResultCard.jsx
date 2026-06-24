@@ -73,8 +73,8 @@ export default function ResultCard({ result, onReset }) {
           </div>
 
           <section className="mb-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-            <p className="section-label mb-1">你说</p>
-            <p className="text-lg text-[var(--color-text)]">「{result.user_symptom}」</p>
+            <p className="section-label mb-1.5">你说</p>
+            <p className="text-title text-[var(--color-text)]">「{result.user_symptom}」</p>
             {result.is_custom && result.matched_scenario && !result.is_ai && (
               <p className="mt-2 text-xs text-[var(--color-text-subtle)]">
                 已匹配最接近场景：{result.matched_scenario}
@@ -91,8 +91,8 @@ export default function ResultCard({ result, onReset }) {
           </section>
 
           <section className="mb-6 rounded-xl border border-[var(--color-accent)]/30 bg-[var(--color-accent-muted)]/40 p-5">
-            <p className="mb-2 text-sm font-medium text-emerald-400">现在就做</p>
-            <p className="text-2xl font-semibold text-emerald-50">{result.primary_action}</p>
+            <p className="section-label mb-2">现在就做</p>
+            <p className="text-display font-semibold leading-snug text-emerald-50">{result.primary_action}</p>
             {result.extra_suggestions && (
               <>
                 <button
@@ -117,8 +117,8 @@ export default function ResultCard({ result, onReset }) {
           />
 
           <section className="mb-6 rounded-xl bg-[var(--color-surface)] p-5">
-            <p className="section-label mb-1">可能关联</p>
-            <p className="text-xl font-semibold">{result.primary_cause}</p>
+            <p className="section-label mb-1.5">可能关联</p>
+            <p className="text-title font-semibold">{result.primary_cause}</p>
             <div className="mt-4">
               <ConfidenceBar score={result.confidence_score} animate delay={300} />
             </div>

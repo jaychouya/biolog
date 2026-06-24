@@ -11,11 +11,11 @@ export default function CounterfactualCard({ score, scoreWithout, note }) {
       <div className="mb-4 grid grid-cols-2 gap-4">
         <div>
           <p className="mb-1 text-xs text-[var(--color-text-subtle)]">无照片</p>
-          <p className="text-2xl font-semibold tabular-nums text-[var(--color-text-muted)]">{scoreWithout}%</p>
+          <p className="text-numeric text-display font-semibold text-[var(--color-text-muted)]">{scoreWithout}%</p>
         </div>
         <div>
           <p className="mb-1 text-xs text-[var(--color-text-subtle)]">有照片</p>
-          <p className="text-2xl font-semibold tabular-nums text-[var(--color-primary)]">{score}%</p>
+          <p className="text-numeric text-display font-semibold text-[var(--color-primary)]">{score}%</p>
         </div>
       </div>
       <ConfidenceBar score={score} animate={false} />

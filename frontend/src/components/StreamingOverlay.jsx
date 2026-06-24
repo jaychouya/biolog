@@ -37,8 +37,8 @@ export default function StreamingOverlay({ steps, isAi, liveText = '' }) {
             <IconSparkle className="w-5 h-5" />
           </span>
           <div>
-            <p className="font-semibold">{isAi ? 'AI 推理中' : '演示分析中'}</p>
-            <p className="text-xs text-[var(--color-text-muted)]">
+            <p className="text-title font-semibold">{isAi ? 'AI 推理中' : '演示分析中'}</p>
+            <p className="text-caption text-[var(--color-text-muted)]">
               {isAi ? '实时接收模型输出' : '演示步骤回放'}
             </p>
           </div>

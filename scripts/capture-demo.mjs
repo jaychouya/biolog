@@ -107,8 +107,6 @@ async function capture() {
   await page.screenshot({ path: result })
   shots.push(result)
 
-  await page.getByRole('button', { name: '返回首页' }).click()
-  await sleep(400)
   await page.goto(`${FRONTEND}/?view=compare`, { waitUntil: 'networkidle' })
   await sleep(1800)
   const compare = join(OUT, 'counterfactual.png')
